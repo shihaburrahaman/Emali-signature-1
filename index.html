@@ -1,0 +1,147 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature 3</title>
+</head>
+<body>
+    <center>
+        <div id="signature-preview-wrapper" class="col-sm-8"><signature-preview ng-show="isPreviewVisible()"><div class="panel panel-info">	
+            <div id="signature-preview-workspace" class="panel-body">				
+                <h3> </h3>
+        
+                <div class="hidden-xs hidden-sm hidden-md" style="position:absolute; right:30px; margin-top:-40px">		
+                    <a ng-show="$prevCtrl.hasDarkMode()" href="javascript:void(0);" data-toggle="modal" data-target="#darkModePrev"></a>
+                </div>	
+            
+                <div><!-- ngInclude: --><ng-include id="signaturePreview" src="selectedTemplatePath" class="ng-scope"><!--UNCOMMENT <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+        <HTML><HEAD><TITLE>Email Signature</TITLE>
+        <META content="text/html; charset=utf-8" http-equiv=Content-Type></HEAD>
+        <BODY style="font-size: 10pt; font-family: {{fontFamily}};">UNCOMMENT-->
+        
+        
+        
+        <table cellspacing="0" cellpadding="0" border="0" style="font-family: Arial, sans-serif; color: #262626; width:380px;" class="ng-scope">
+          <tbody>
+          <tr>
+            <td width="380">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <!-- ngIf: showField('photo') --><td ng-if="showField('photo')" style="width: 120px; height: 100px;" class="ng-scope"><img border="0" ng-src="https://raw.githubusercontent.com/shihaburrahaman/Image-Gallary/main/Shihabura%20rahaman.png" alt="Photo" width="100" style="max-width:80px; height:auto; border:0;" src="https://raw.githubusercontent.com/shihaburrahaman/Image-Gallary/main/Shihabura%20rahaman.png"></td><!-- end ngIf: showField('photo') -->
+                            <td style="width: 260px;">
+                                <span style="FONT-SIZE: 16pt; COLOR: #262626; font-family: Arial, sans-serif;"><strong class="ng-binding">Shihabur Rahaman</strong></span>
+                                <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="FONT-SIZE: 10pt; font-family: Arial, sans-serif; COLOR: #262626;" class="ng-binding ng-scope"><br>Web Designer &amp; Developer</span><!-- end ngIf: showField('title') -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <table style="width: 380px;" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <!-- ngIf: showField('phone') --><td ng-if="showField('phone')" style="width: 30px; padding-top: 10px;" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/phone-icon.png" alt="phone-icon" border="0" height="20" width="20" style="border:0; height:20px; width:20px;" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/phone-icon.png"></td><!-- end ngIf: showField('phone') -->
+                            <!-- ngIf: showField('phone') --><td ng-if="showField('phone')" style="width: 160px; padding-top: 10px; font-size: 9pt; font-family: Arial, sans-serif; color: #808080;" class="ng-binding ng-scope">666666601</td><!-- end ngIf: showField('phone') -->
+                            <!-- ngIf: showField('phone') --><td ng-if="showField('phone')" style="width: 10px;" class="ng-scope"></td><!-- end ngIf: showField('phone') -->
+                            <!-- ngIf: showField('mobile') --><td ng-if="showField('mobile')" style="width: 30px; padding-top: 10px;" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/mobile-icon.png" alt="mobile-icon" border="0" height="20" width="20" style="border:0; height:20px; width:20px;" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/mobile-icon.png"></td><!-- end ngIf: showField('mobile') -->
+                            <!-- ngIf: showField('mobile') --><td ng-if="showField('mobile')" style="width: 150px; padding-top: 10px; font-size: 9pt; font-family: Arial, sans-serif; color: #808080;" class="ng-binding ng-scope">01740168754</td><!-- end ngIf: showField('mobile') -->
+                        </tr>
+                        <tr>
+                            <!-- ngIf: showField('email') --><td ng-if="showField('email')" style="padding-top: 10px;" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/mail-icon.png" alt="phone-icon" border="0" height="20" width="20" style="border:0; height:20px; width:20px;" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/mail-icon.png"></td><!-- end ngIf: showField('email') -->
+                            <!-- ngIf: showField('email') --><td ng-if="showField('email')" style="padding-top: 10px;" class="ng-scope"><a href="mailto:Shihaburrahaman@gmail.com" style="font-size: 9pt; font-family: Arial, sans-serif; color: #808080; text-decoration: none;"><span style="font-size: 9pt; font-family: Arial, sans-serif; color: #808080; text-decoration: none;" class="ng-binding">Shihaburrahaman@gmail.com</span></a></td><!-- end ngIf: showField('email') -->
+                            <!-- ngIf: showField('email') --><td ng-if="showField('email')" style="width: 10px;" class="ng-scope"></td><!-- end ngIf: showField('email') -->
+                            <!-- ngIf: showField('website') --><td ng-if="showField('website')" style="padding-top: 10px;" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/website-icon.png" alt="mobile-icon" border="0" height="20" width="20" style="border:0; height:20px; width:20px;" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/website-icon.png"></td><!-- end ngIf: showField('website') -->
+                            <!-- ngIf: showField('website') --><td ng-if="showField('website')" style="padding-top: 10px; font-size: 9pt; font-family: Arial, sans-serif; color: #808080;" class="ng-scope"><a href="http://www.literaturexpres.com" target="_blank" rel="noopener" style="text-decoration:none; color:#808080; font-family:Arial, sans-serif; font-size:9pt"><span style="text-decoration:none; color:#808080; font-family:Arial, sans-serif; font-size:9pt" class="ng-binding">www.literaturexpres.com</span></a></td><!-- end ngIf: showField('website') -->
+                        </tr>
+                       
+                        <tr>
+                            <!-- ngIf: isAnyFieldEntered('company, address1, address2') --><td ng-if="isAnyFieldEntered('company, address1, address2')" style="width: 30px; padding-top: 10px;" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/address-icon.png" alt="mobile-icon" border="0" height="20" width="20" style="border:0; height:20px; width:20px;" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/address-icon.png"></td><!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+                            <!-- ngIf: isAnyFieldEntered('company, address1, address2') --><td colspan="4" ng-if="isAnyFieldEntered('company, address1, address2')" style="padding-top: 10px; font-size: 9pt; font-family: Arial, sans-serif; color: #808080;" class="ng-scope"><!-- ngIf: showField('company') --><span ng-if="showField('company')" class="ng-binding ng-scope">Literature Express<!-- ngIf: isAnyFieldEntered('address1, address2') --><span ng-if="isAnyFieldEntered('address1, address2')" style="font-size: 9pt; font-family: Arial, sans-serif;color: #808080;" class="ng-scope">, </span><!-- end ngIf: isAnyFieldEntered('address1, address2') --></span><!-- end ngIf: showField('company') --><!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 9pt; font-family: Arial, sans-serif;color: #808080;" class="ng-binding ng-scope">Halfrasta, Natore<!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size: 9pt; font-family: Arial, sans-serif;color: #808080;" class="ng-scope">, </span><!-- end ngIf: showField('address2') --></span><!-- end ngIf: showField('address1') --><!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size: 9pt; font-family: Arial, sans-serif;color: #808080;" class="ng-binding ng-scope">6400, Natore</span><!-- end ngIf: showField('address2') --></td><!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- ngIf: showField('banner') -->
+                
+                <p style="margin-top:15px">
+                    <!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')" class="ng-scope"><a href="https://www.facebook.com/srsarker622" target="_blank" rel="noopener"><img border="0" width="20" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/fb.png" alt="facebook icon" style="border:0; height:20px; width:20px" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/fb.png"></a>&nbsp;</span><!-- end ngIf: showField('facebookURL') -->
+                    <!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')" class="ng-scope"><a href="https://twitter.com/ShihaburRaham12" target="_blank" rel="noopener"><img border="0" width="20" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/tt.png" alt="twitter icon" style="border:0; height:20px; width:20px" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/tt.png"></a>&nbsp;</span><!-- end ngIf: showField('twitterURL') -->
+                    <!-- ngIf: showField('youtubeURL') --><span ng-if="showField('youtubeURL')" class="ng-scope"><a href="https://www.youtube.com/channel/UCZ9yEcdrQGPbL8HGZuVQMjg" target="_blank" rel="noopener"><img border="0" width="20" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/yt.png" alt="youtube icon" style="border:0; height:20px; width:20px" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/yt.png"></a>&nbsp;</span><!-- end ngIf: showField('youtubeURL') -->
+                    <!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')" class="ng-scope"><a href="https://www.linkedin.com/company/mycompany404" target="_blank" rel="noopener"><img border="0" width="20" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/ln.png" alt="linkedin icon" style="border:0; height:20px; width:20px" src="https://www.mail-signatures.com/signature-generator/img/templates/gold-security-awards/ln.png"></a>&nbsp;</span><!-- end ngIf: showField('linkedinURL') -->
+                    <!-- ngIf: showField('instagramURL') -->
+                    <!-- ngIf: showField('pinterestURL') -->
+                </p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+                
+        
+        <!--UNCOMMENT 
+        </BODY>
+        </HTML>UNCOMMENT-->  </ng-include></div>
+            </div>
+        
+                <div class="hidden-lg text-center">		
+                    <a ng-show="$prevCtrl.hasDarkMode()" href="javascript:void(0);" data-toggle="modal" data-target="#darkModePrev"></a>
+                </div>
+                
+            <div id="darkModePrev" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body text-left">
+                                                
+                                                
+                    </div>
+                    <div class="modal-footer">
+                        
+                  </div>
+                  
+                </div>
+              </div>
+            </div>	
+            
+        </div>
+        <style>
+        .modal-lg {
+            max-width: 650px;
+        }
+        </style>
+        <script>
+        $(document).ready(function(){
+          $('[data-tooltip="tooltip"]').tooltip();
+        });
+        </script>
+        </signature-preview><signature-deployment ng-show="!isPreviewVisible()" is-visible="!isPreviewVisible()" selected-template="selectedTemplate" selected-platform-path="selectedPlatformPath" class="ng-isolate-scope ng-hide"><div id="application-steps">	 				
+            <!-- ngInclude: --><ng-include src="$ctrl.selectedPlatformPath" class="ng-scope">
+        
+        
+        
+        <script class="ng-scope">
+        
+        function clearHiddenPreview ($sourceElement) {									
+                var html;
+                // USUWANIE KLAS ANGULAROWYCH
+                $sourceElement.find(".ng-binding").removeClass("ng-binding");			
+                $sourceElement.find(".ng-scope").removeClass("ng-scope");							
+                $sourceElement.find("[ng-src]").removeAttr("ng-src");		
+                $sourceElement.find("[ng-if]").removeAttr("ng-if");					
+                $sourceElement.find("img.responsive").removeClass("responsive");
+        
+                html = $sourceElement.get(0).innerHTML;															
+        
+                // ODKOMENTOWANIE UKRYTYCH SEKCJI 
+                html = html.replace(/<\!\-\-UNCOMMENT/g, "");			
+                html = html.replace(/UNCOMMENT\-\->/g, "");									
+        
+                // USUWANIE KOMENTARZY I INNYCH PUSTYCH
+                html = html.replace(/\<\!\-\-[^\-\-\>]*/gi,"");									
+                html = html.replace(/\-\-\>/gi,"");	
+                html = html.replace(/class\=\"\"/gi,"");					
+                html = html.replace(/\n\t/gi,"");					
+                html = html.replace(/ >/gi,">");								
+                return html; 			
+        </center>
+        
+</body>
+</html>
